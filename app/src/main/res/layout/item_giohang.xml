@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/item_giohang_img"
+            android:src="@drawable/news"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Tên sản phẩm"
+                android:id="@+id/item_giohang_tensp"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/item_giohang_gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₫60.348"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:textSize="19dp"
+                />
+            <LinearLayout
+                android:layout_weight="20"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/item_giohang_tru"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_remove_24"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    android:id="@+id/item_giohang_soluong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_giohang_cong"
+                    android:src="@drawable/baseline_add_24"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/item_giohang_gia2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₫60.348"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="19dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
